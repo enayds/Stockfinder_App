@@ -52,8 +52,8 @@ def check_password():
 # loading and caching the df to save memory
 @st.cache()
 def load_data():
-    df = pd.read_parquet('C:/Users/DELL/Stockfinder App/Stock Data/merged_data.parquet', engine='fastparquet')
-    df_fund = pd.read_parquet('C:/Users/DELL/Stockfinder App/Stock Data/df_fundamentals.parquet', engine='fastparquet')
+    df = pd.read_parquet('Stock Data/merged_data.parquet', engine='fastparquet')
+    df_fund = pd.read_parquet('Stock Data/df_fundamentals.parquet', engine='fastparquet')
     
     # merge both data to have a full data
     df_merged =  pd.merge(df, df_fund, on="instrument_id")
