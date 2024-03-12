@@ -1,7 +1,3 @@
-Here's a README file for your project:
-
----
-
 # StockFinder App
 
 StockFinder is a web application built with Streamlit that allows users to explore insights and filter stocks based on various financial metrics.
