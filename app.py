@@ -252,7 +252,7 @@ def stock_filter():
                 f"Currently priced at **${row['price']}**, it offers a glimpse into the market's valuation of its potential. "
                 f"For a deeper understanding, let's explore what makes {row['long_name']} unique.")
 
-                company_description_intro = f"**About {row['long_name']}**: At the heart of [Company Name]'s success is its core business philosophy and strategic initiatives:"
+                company_description_intro = f"**About {row['long_name']}**: At the heart of **{row['long_name']}**'s success is its core business philosophy and strategic initiatives:"
                 company_description = row['description']  
 
 
